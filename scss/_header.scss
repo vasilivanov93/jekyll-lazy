@@ -1,0 +1,117 @@
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	font-style: normal;
+}
+
+body {
+	padding-top: 9rem;
+}
+
+.site-branding {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%); 
+	padding: var(--spacing-site);
+	padding-bottom: 4rem;
+}
+
+.site-title {
+	font-size: 1.8em;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-bottom: 2px solid #DDD;
+}
+
+.site-description {
+	font-family: serif;
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+.nav {
+	display: none;
+	position: fixed;
+	left: 0; right: 0; top: 0; bottom: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 1050;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.nav li {
+	display: block;
+	list-style: none outside;
+	padding: 1em 0;
+	animation: navitemin 0.3s 1 ease-in forwards;
+}
+
+.nav li:nth-child(1) {	animation-delay: 0.15s; }
+.nav li:nth-child(2) {	animation-delay: 0.30s; }
+.nav li:nth-child(3) {	animation-delay: 0.45s; }
+.nav li:nth-child(4) {	animation-delay: 0.60s; }
+.nav li:nth-child(5) {	animation-delay: 0.75s; }
+.nav li:nth-child(6) {	animation-delay: 0.90s; }
+
+.nav a {
+	display: block;
+	padding: 1em 2em;
+	background: #fff;
+	color: #444;
+	box-shadow: 0 0 1.5rem 0.1rem rgba(0,0,0,0.1);
+}
+
+.nav a:before {
+	margin-right: 1em;
+}
+
+.nav-toggle {
+	position: fixed;
+	top: var(--spacing-site, 1em);
+	left: var(--spacing-site, 1em);
+	z-index: 1070;
+	font-size: 2rem;
+	padding: 0 0.5rem;
+	animation: navtogglein 0.5s 1 ease-in-out forwards;
+}
+
+.nav-toggle:before {
+	margin-right: 1rem;
+}
+
+.nav-toggle.right {
+	left: inherit;
+	right: var(--spacing-site, 1em);
+}
+
+.nav-toggle span {
+	display: none;
+}
+
+#checkbox-toggle {
+	display: none;
+}
+
+#checkbox-toggle:checked + .header .nav {
+	display: flex;
+}
+
+#checkbox-toggle:checked + .header .nav-toggle {
+	animation: jump 0.3s 1 ease-in-out forwards;
+}

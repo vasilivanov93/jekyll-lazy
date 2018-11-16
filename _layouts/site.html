@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>{{site.title}}</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<input type="checkbox" id="checkbox-toggle" />
+
+
+	<header class="header">
+		<div class="site-branding">
+			<p class="site-title">
+				Jekyll Test Site
+			</p>
+			<p class="site-description">{{site.description}}</p>
+		</div><!-- /.site-logo -->
+
+		<label for="checkbox-toggle" onclick="changeBarsWithTimesIcon()" class="fas fa-bars nav-toggle left">
+			<span>Menu</span>
+		</label>
+
+		<label for="checkbox-toggle" onclick="changeBarsWithTimesIcon()" class="fas fa-bars nav-toggle right">
+			<span>Menu</span>
+		</label>
+		
+		<nav class="nav">
+			<ul>
+				<li>
+					<a href="{{ site.baseurl }}/"><i class="fas fa-newspaper"></i> Home</a>
+				</li>
+
+				<li>
+					<a href="{{ site.baseurl }}/about"><i class="fas fa-user"></i> About</a>
+				</li>
+
+				<li>
+					<a href="{{ site.baseurl }}/contacts"><i class="fas fa-envelope"></i> Contacts</a>
+				</li>
+
+				<li>
+					<a href="{{ site.baseurl }}/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+				</li>
+			</ul>
+		</nav><!-- /.nav -->
+	</header><!-- /.header -->
+
+	<main class="main">
+		{{content}}
+	</main><!-- /.main -->
+
+	<footer class="footer">
+		
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
+<script>
+	function changeBarsWithTimesIcon() {
+		if($('label').hasClass('fa-bars')) {
+			$('label').removeClass('fa-bars').addClass('fa-times');
+		} else {
+			$('label').removeClass('fa-times').addClass('fa-bars');
+		}
+	}
+</script>
+</body>
+</html>

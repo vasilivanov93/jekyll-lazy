@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Jekyll Lazy Theme</title>
+	<link rel="stylesheet" href="/lazy/css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<input type="checkbox" id="checkbox-toggle" />
+
+
+	<header class="header">
+		<div class="site-branding">
+			<p class="site-title">
+				Jekyll Test Site
+			</p>
+			<p class="site-description">It is minimal and lazy!</p>
+		</div><!-- /.site-logo -->
+
+		<label for="checkbox-toggle" onclick="changeBarsWithTimesIcon()" class="fas fa-bars nav-toggle left">
+			<span>Menu</span>
+		</label>
+
+		<label for="checkbox-toggle" onclick="changeBarsWithTimesIcon()" class="fas fa-bars nav-toggle right">
+			<span>Menu</span>
+		</label>
+		
+		<nav class="nav">
+			<ul>
+				<li>
+					<a href="/lazy/"><i class="fas fa-newspaper"></i> Home</a>
+				</li>
+
+				<li>
+					<a href="/lazy/about"><i class="fas fa-user"></i> About</a>
+				</li>
+
+				<li>
+					<a href="/lazy/contacts"><i class="fas fa-envelope"></i> Contacts</a>
+				</li>
+
+				<li>
+					<a href="/lazy/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+				</li>
+			</ul>
+		</nav><!-- /.nav -->
+	</header><!-- /.header -->
+
+	<main class="main">
+		<form action="#/login" method="post" class="form">
+	<fieldset>
+		<legend>Login</legend>
+
+		<p class="field">
+			<label for="username">Username</label>
+			<span class="input">
+				<input type="text" name="username" id="username" />
+				<span class="actions"></span>
+				<i class="fas fa-user"></i>
+			</span>
+		</p><!-- /.field -->
+		
+		<p class="field">
+			<label for="password">Password</label>
+			<span class="input">
+				<input type="password" name="password" id="password" />
+				<span class="actions"></span>
+				<i class="fas fa-key"></i>
+			</span>
+		</p><!-- /.field -->
+
+		<input type="submit" value="Login" />
+	</fieldset>
+</form><!-- /.form -->
+	</main><!-- /.main -->
+
+	<footer class="footer">
+		
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
+<script>
+	function changeBarsWithTimesIcon() {
+		if($('label').hasClass('fa-bars')) {
+			$('label').removeClass('fa-bars').addClass('fa-times');
+		} else {
+			$('label').removeClass('fa-times').addClass('fa-bars');
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Jekyll Lazy Theme</title>
+	<link rel="stylesheet" href="/lazy/css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<input type="checkbox" id="checkbox-toggle" />
+
+
+	<header class="header">
+		<div class="site-branding">
+			<p class="site-title">
+				Jekyll Test Site
+			</p>
+			<p class="site-description">It is minimal and lazy!</p>
+		</div><!-- /.site-logo -->
+
+		<label for="checkbox-toggle" onclick="changeBarsWithTimesIcon()" class="fas fa-bars nav-toggle left">
+			<span>Menu</span>
+		</label>
+
+		<label for="checkbox-toggle" onclick="changeBarsWithTimesIcon()" class="fas fa-bars nav-toggle right">
+			<span>Menu</span>
+		</label>
+		
+		<nav class="nav">
+			<ul>
+				<li>
+					<a href="/lazy/"><i class="fas fa-newspaper"></i> Home</a>
+				</li>
+
+				<li>
+					<a href="/lazy/about"><i class="fas fa-user"></i> About</a>
+				</li>
+
+				<li>
+					<a href="/lazy/contacts"><i class="fas fa-envelope"></i> Contacts</a>
+				</li>
+
+				<li>
+					<a href="/lazy/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+				</li>
+			</ul>
+		</nav><!-- /.nav -->
+	</header><!-- /.header -->
+
+	<main class="main">
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h1 id="title-level-1">Title Level 1</h1>
+<h2 id="title-level-2">Title Level 2</h2>
+<h3 id="title-level-3">Title Level 3</h3>
+<h4 id="title-level-4">Title Level 4</h4>
+<h5 id="title-level-5">Title Level 5</h5>
+<h6 id="title-level-6">Title Level 6</h6>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h1 id="title-level-1-1">Title Level 1</h1>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h2 id="title-level-2-1">Title Level 2</h2>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h3 id="title-level-3-1">Title Level 3</h3>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<ul>
+    <li>
+        <a href="#">Consetetur sadipscing elitr</a>
+    </li>
+
+    <li>
+        <a href="#">sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</a>
+    </li>
+
+    <li>
+        <a href="#">sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</a>
+    </li>
+
+    <li>
+        <a href="#">Stet clita kasd gubergren</a>
+    </li>
+</ul>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+	</main><!-- /.main -->
+
+	<footer class="footer">
+		
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
+<script>
+	function changeBarsWithTimesIcon() {
+		if($('label').hasClass('fa-bars')) {
+			$('label').removeClass('fa-bars').addClass('fa-times');
+		} else {
+			$('label').removeClass('fa-times').addClass('fa-bars');
+		}
+	}
+</script>
+</body>
+</html>
