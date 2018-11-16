@@ -7,7 +7,7 @@ title: Jekyll Lazy Theme
 email: lazy@gmail.com
 description: It is minimal and lazy!
 
-baseurl: "/lazy" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll-lazy" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 destination: 'docs'
 
